@@ -4,69 +4,19 @@
       <title>MKZH | Mike Zhu's Website</title>
       <link rel="icon" type="image/png" href="assets/logo.png"/>
       <link rel="apple-touch-icon" href="assets/logo.png"/>
+      <style type="text/css">
+        body, html {
+          margin: 0; padding: 0; height: 100%; overflow: hidden;
+        }
 
-      <!-- Montserrat font-->
-      <link rel="preconnect" href="https://fonts.gstatic.com">
-      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
-
-      <!-- CSS -->
-      <link href="css/normalize.css" rel="stylesheet"/>
-      <link href="css/main.css" rel="stylesheet"/>
+        #iframe_container {
+          position:absolute; left: 0; right: 0; bottom: 0; top: 0px; 
+        }
+    </style>
     </head>
     <body>
-      <main>
-        <section id="pre-landing">
-          <div class="pre-logo-container">
-            <img src="assets/logo.png" class="respImg pre-logo" alt="MKZH logo">
-          </div>
-          <div class="scroll-arrow-container">
-            <a href="#landing">
-              <div class="scroll-arrow"></div>
-            </a>
-          </div>
-        </section>
-        <section id="landing">
-          <div class="landing-text-container">
-            <p class="landing-text">
-              Hi, my name is <a class="nametag clickable" onclick="showCard();"><b>Mike</b></a>. <br>
-              I am <i id="typewriter">a human|</i>.
-            </p>
-          </div>
-        </section>
-
-        <!-- business card modal -->
-        <div id="nametagContainer" class="modal">
-
-          <!-- business card content -->
-          <div id="nametagCard" class="modal-content">
-            <p id="nametagName" class="text">Mike Zhu</p>
-            <a id="nametagSite" class="text" href="https://mkzh.org">mkzh.org</a>
-            <div id="nametagBL"></div>
-            <div id="nametagClose" class="clickable">
-              <div id="nametagCloseX" class="clickable">&times;</div>
-            </div>
-            <div id="nametagSocials">
-              <a id="nametagEmail" class="text" href="javascript:copyEmail();">
-                <img class="respImg" id="emailIcon" src="assets/mail.svg" alt="Email icon">
-                <span class="tooltip" id="emailTip">Email</span>
-                <span class="tooltip" id="emailCopied">Copied</span>
-              </a>
-              <a id="nametagLI" class="text" href="https://www.linkedin.com/in/mkzh/" target="_blank" rel="noreferrer noopener">
-                <img class="respImg" id="linkedInIcon" src="assets/linkedin.svg" alt="LinkedIn icon">
-                <span class="tooltip" id="linkedInTip">LinkedIn</span>
-              </a>
-              <a id="nametagGH" class="text" href="https://github.com/mkzedh" target="_blank" rel="noreferrer noopener">
-                <img class="respImg" id="gitHubIcon" src="assets/github.svg" alt="GitHub icon">
-                <span class="tooltip" id="gitHubTip">GitHub</span>
-              </a>
-            </div>
-          </div>
-
-        </div>
-
-      </main>
-
-      <!-- Scripts -->
-      <script src="scripts/main.js"></script>
+      <div id="iframe_container">
+        <iframe width="100%" height="100%" frameborder="0" src="https://docs.google.com/document/d/18RbBrTlswDTo4FZNfStOgO_SF0WgiVm4mhACaLefMlQ/edit?usp=sharing"></iframe>
+      </div>
     </body>
 </html>
